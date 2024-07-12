@@ -6,9 +6,17 @@
 #index_banner h1 {
     color: rgb(61, 18, 102);
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     padding: 2rem;
     line-height: 1.5;
+    background-image: linear-gradient(to bottom, #7b2682, #6fb74d);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+#index_banner.pt-5 {
+    padding-top: 8rem !important;
 }
 
 #index_banner .group-workouts {
@@ -18,6 +26,6 @@
 }
 
 .banner-group-img {
-    width: 70%;
     border-radius: 2rem;
+    max-width: 50%;
 }
