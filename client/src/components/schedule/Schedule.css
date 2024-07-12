@@ -1,0 +1,19 @@
+
+.table tbody td .img {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+.img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(logo-plus-text-square.png);
+}
+.mb-2, .my-2 {
+    margin-bottom: 0.5rem !important;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
