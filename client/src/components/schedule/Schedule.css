@@ -17,3 +17,7 @@
 .rounded-circle {
     border-radius: 50% !important;
 }
+
+.bx-calendar {
+    font-size: 2rem !important;
+}

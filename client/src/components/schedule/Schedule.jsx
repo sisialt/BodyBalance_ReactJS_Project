@@ -1,40 +1,3 @@
-// export default function Schedule() {
-//     const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-//     const hours = ['08:00', '09:00', '10:00', '16:00', '17:00', '18:00',];
-
-//     return (
-//         <>  
-//             <h2>Weekly Schedule</h2>
-//             <table>
-//                 <thead>
-//                     <tr>
-//                         <th>Time</th>
-//                         {weekdays.map((day, index) => (
-//                         <th key={index}>
-//                             <td>{day}</td>
-//                         </th>
-//                     ))}
-//                     </tr>
-//                 </thead>
-//                 <tbody>
-//                     {hours.map((hour, index) => (
-//                         <tr key={index}>
-//                             <td>{hour}</td>
-//                             <td>workout</td>
-//                             <td>workout</td>
-//                             <td>workout</td>
-//                             <td>workout</td>
-//                             <td>workout</td>
-//                             <td>workout</td>
-//                             <td>workout</td>
-//                         </tr>
-//                     ))}
-//                 </tbody>
-//             </table>
-//         </>
-//     );
-// }
-
 import './Schedule.css'
 
 export default function Schedule() {
@@ -43,7 +6,7 @@ export default function Schedule() {
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
-                        <h2 className="text-center mb-4">Weekly Schedule</h2>
+                        <h2 className="text-center mb-4 h2 semi-bold-600 py-5"><i className='bx-fw bx bx-calendar bx-xs'></i> Weekly Schedule <i className='bx-fw bx bx-calendar bx-xs'></i></h2>
                         <div className="table-wrap shadow-lg">
                             <table className="table table-bordered text-center round-border">
                                 <thead>
