@@ -1,4 +1,5 @@
 import { useState,useEffect } from 'react';
+import './Workouts.css'
 import baby from './baby-power2.jpg';
 import WorkoutDetails from './workout/workout-details/WorkoutDetails.jsx';
 import Workout from './workout/Workout.jsx';
@@ -30,10 +31,10 @@ export default function Workouts() {
 
     return (
         <>
-            <section className="py-5 mb-5">
+            <section className="py-5">
                 <div className="container">
                     <div className="recent-work-header row text-center pb-5">
-                        <h2 className="col-md-6 m-auto h2 semi-bold-600 py-5">Our Most Visited Workouts</h2>
+                        <h2 className="col-md-6 m-auto h2 semi-bold-600 py-5"><i className='bx-fw bx bx-heart bx-xs'></i> Most Favourite Workouts <i className='bx-fw bx bx-heart bx-xs'></i></h2>
                     </div>
                     <div className="row gy-5 g-lg-5 mb-4">
 
