@@ -7,7 +7,7 @@ export default function Comments() {
             <section className="py-5 mb-5">
                 <div className="container">
                     <div className="recent-work-header row text-center pb-5">
-                        <h2 className="col-md-6 m-auto h2 semi-bold-600 py-5">Happy Clients</h2>
+                        <h2 className="col-md-6 m-auto h2 semi-bold-600 py-5"><i className='bx-fw bx bx-smile bx-xs'></i> Happy Clients <i className='bx-fw bx bx-smile bx-xs'></i></h2>
                     </div>
                     <div className="row gy-5 g-lg-5 mb-4">
 
