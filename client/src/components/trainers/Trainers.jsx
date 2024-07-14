@@ -8,7 +8,7 @@ export default function Trainers() {
                 <div className="row gx-5 gx-sm-3 gx-lg-5 gy-lg-5 gy-3 pb-3 projects">
 
                     <div className="col-xl-3 col-md-4 col-sm-6 project ui branding">
-                        <a href="#" className="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                        <a href="#" className="service-work card border-0 text-white shadow-lg overflow-hidden mx-5 m-sm-0">
                             <img className="service card-img" src={mobility3} alt="Card image" />
                             <div className="service-work-vertical card-img-overlay d-flex align-items-end">
                                 <div className="service-work-content text-left text-light">
@@ -20,7 +20,7 @@ export default function Trainers() {
                     </div>
 
                     <div className="col-xl-3 col-md-4 col-sm-6 project ui branding">
-                        <a href="#" className="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                        <a href="#" className="service-work card border-0 text-white shadow-lg overflow-hidden mx-5 m-sm-0">
                             <img className="service card-img" src={mobility3} alt="Card image" />
                             <div className="service-work-vertical card-img-overlay d-flex align-items-end">
                                 <div className="service-work-content text-left text-light">
@@ -32,7 +32,7 @@ export default function Trainers() {
                     </div>
 
                     <div className="col-xl-3 col-md-4 col-sm-6 project ui branding">
-                        <a href="#" className="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                        <a href="#" className="service-work card border-0 text-white shadow-lg overflow-hidden mx-5 m-sm-0">
                             <img className="service card-img" src={mobility3} alt="Card image" />
                             <div className="service-work-vertical card-img-overlay d-flex align-items-end">
                                 <div className="service-work-content text-left text-light">
@@ -44,7 +44,7 @@ export default function Trainers() {
                     </div>
 
                     <div className="col-xl-3 col-md-4 col-sm-6 project ui branding">
-                        <a href="#" className="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                        <a href="#" className="service-work card border-0 text-white shadow-lg overflow-hidden mx-5 m-sm-0">
                             <img className="service card-img" src={mobility3} alt="Card image" />
                             <div className="service-work-vertical card-img-overlay d-flex align-items-end">
                                 <div className="service-work-content text-left text-light">
