@@ -1,12 +1,13 @@
 import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
-import Trainers from './components/trainers/Trainers'
-import Workouts from './components/workouts/Workouts'
-import Banner from './components/banner/Banner'
-import Schedule from './components/schedule/Schedule'
-import Comments from './components/comments/Comments'
+import Home from './components/home/Home'
+import WorkoutsPage from './components/workouts-page/WorkoutsPage'
+import OurTeamPage from './components/our-team-page/OurTeamPage'
+import PricesPage from './components/prices-page/PricesPage'
+import ContactUsPage from './components/contact-us-page/ContactUsPage'
 
 function App() {
 
@@ -14,15 +15,13 @@ function App() {
 		<>
 			<Header />
 
-			<Banner />
-
-			<Workouts />
-
-			<Schedule />
-
-			<Trainers />
-
-			<Comments />
+			<Routes>
+				<Route path='/' element={<Home />} />
+				<Route path='/workouts' element={<WorkoutsPage />} />
+				<Route path='/our-team' element={<OurTeamPage />} />
+				<Route path='/prices' element={<PricesPage />} />
+				<Route path='/contact-us' element={<ContactUsPage />} />
+			</Routes>
 
 			<Footer />
 		</>
