@@ -8,6 +8,7 @@ import WorkoutsPage from './components/workouts-page/WorkoutsPage'
 import OurTeamPage from './components/our-team-page/OurTeamPage'
 import PricesPage from './components/prices-page/PricesPage'
 import ContactUsPage from './components/contact-us-page/ContactUsPage'
+import WorkoutInfo from './components/workouts-page/workout-info/WorkoutInfo'
 
 function App() {
 
@@ -17,7 +18,8 @@ function App() {
 
 			<Routes>
 				<Route path='/' element={<Home />} />
-				<Route path='/workouts' element={<WorkoutsPage />} />
+				<Route path='/workouts/*' element={<WorkoutsPage />} />
+				<Route path='/workouts/mobility' element={<WorkoutInfo />} />
 				<Route path='/our-team' element={<OurTeamPage />} />
 				<Route path='/prices' element={<PricesPage />} />
 				<Route path='/contact-us' element={<ContactUsPage />} />
