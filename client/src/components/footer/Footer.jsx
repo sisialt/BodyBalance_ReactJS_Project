@@ -1,5 +1,6 @@
 import logo from './logo-plus-text.png';
-import './Footer.css'
+import './Footer.css';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
     return (
@@ -38,22 +39,19 @@ export default function Footer() {
                             <h3 className="h4 pb-lg-3 text-light light-300">Our Company</h3>
                             <ul className="list-unstyled text-light light-300">
                                 <li className="pb-2">
-                                    <i className='bx-fw bx bxs-chevron-right bx-xs'></i><a className="text-decoration-none text-light" href="#">Home</a>
+                                    <i className='bx-fw bx bxs-chevron-right bx-xs'></i><Link to="/" className="text-decoration-none text-light">Home</Link>
                                 </li>
                                 <li className="pb-2">
-                                    <i className='bx-fw bx bxs-chevron-right bx-xs'></i><a className="text-decoration-none text-light py-1" href="#">Workouts</a>
+                                    <i className='bx-fw bx bxs-chevron-right bx-xs'></i><Link to="/workouts" className="text-decoration-none text-light py-1">Workouts</Link>
                                 </li>
                                 <li className="pb-2">
-                                    <i className='bx-fw bx bxs-chevron-right bx-xs'></i><a className="text-decoration-none text-light py-1" href="#">Our Team</a>
+                                    <i className='bx-fw bx bxs-chevron-right bx-xs'></i><Link to="/our-team" className="text-decoration-none text-light py-1">Our Team</Link>
                                 </li>
                                 <li className="pb-2">
-                                    <i className='bx-fw bx bxs-chevron-right bx-xs'></i><a className="text-decoration-none text-light py-1" href="#">Prices</a>
+                                    <i className='bx-fw bx bxs-chevron-right bx-xs'></i><Link to="/prices" className="text-decoration-none text-light py-1">Prices</Link>
                                 </li>
                                 <li className="pb-2">
-                                    <i className='bx-fw bx bxs-chevron-right bx-xs'></i><a className="text-decoration-none text-light py-1" href="#">Gallery</a>
-                                </li>
-                                <li className="pb-2">
-                                    <i className='bx-fw bx bxs-chevron-right bx-xs'></i><a className="text-decoration-none text-light py-1" href="#">Contact Us</a>
+                                    <i className='bx-fw bx bxs-chevron-right bx-xs'></i><Link to="/contact-us" className="text-decoration-none text-light py-1">Contact Us</Link>
                                 </li>
                             </ul>
                         </div>
