@@ -1,0 +1,43 @@
+.contact-us-heading {
+    text-align: center;
+}
+
+.container.contact-us-page {
+    margin-bottom: 5em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: #ddebd8;
+    border-radius: 0.3em;
+    padding: 1em;
+    box-shadow: 0 0 0.5em 0 rgb(0, 0, 0, 0.1);
+    margin: 2em auto;
+    max-width: 70%;
+}
+
+form>input {
+    flex: 0 0 1ch;
+    margin: 2rem;
+    margin-bottom: 0;
+    width: 8em;
+    align-self: center;
+}
+
+input {
+    border: none;
+    background: hsl(0, 100%, 100%);
+    border-radius: .25rem;
+    padding: .75rem 1rem;
+}
+
+form>textarea {
+    min-height: 20ch;
+}
+
+input[type="submit"] {
+    background: #333;
+    color: #fff;
+}

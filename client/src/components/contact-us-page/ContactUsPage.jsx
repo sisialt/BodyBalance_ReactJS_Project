@@ -1,8 +1,14 @@
+import './ContactUsPage.css';
+
 export default function ContactUsPage() {
     return (
         <>
-            <div style={{paddingTop: 200}}>
-                <h1>Contact Us Page</h1>
+            <div className="container contact-us-page" style={{ paddingTop: 200 }}>
+                <h1 className="contact-us-heading">Contact Us</h1>
+                <form>
+                    <textarea placeholder="Type your message"></textarea>
+                    <input type="submit" value="Send" />
+                </form>
             </div>
         </>
     );
