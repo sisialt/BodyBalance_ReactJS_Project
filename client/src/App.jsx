@@ -19,7 +19,7 @@ function App() {
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/workouts/*' element={<WorkoutsPage />} />
-				<Route path='/workouts/mobility' element={<WorkoutInfo />} />
+				<Route path='/workouts/:workoutId' element={<WorkoutInfo />} />
 				<Route path='/our-team' element={<OurTeamPage />} />
 				<Route path='/prices' element={<PricesPage />} />
 				<Route path='/contact-us' element={<ContactUsPage />} />
