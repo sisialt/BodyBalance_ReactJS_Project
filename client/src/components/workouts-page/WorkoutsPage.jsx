@@ -1,40 +1,45 @@
+import { useState, useEffect } from 'react';
+import { Link, Routes, Route } from 'react-router-dom';
+
 import './WorkoutsPage.css';
-import img1 from './after-birth.jpg';
-import { Link } from 'react-router-dom';
-import { Routes, Route } from 'react-router-dom';
 import WorkoutInfo from './workout-info/WorkoutInfo';
 
 export default function WorkoutsPage() {
+    const baseUrl = 'http://localhost:3030/jsonstore';
+    const [workouts, setWorkouts] = useState([]);
+
+    useEffect(() => {
+        async function getWorkouts() {
+            const response = await fetch(`${baseUrl}/workouts`);
+            const data = await response.json();
+            const workoutData = Object.values(data);
+            setWorkouts(workoutData);
+        }
+        getWorkouts();
+    }, []);
+
     return (
         <>
             <div >
                 <h1 className="workouts-heading">Workouts</h1>
                 <div className="container workouts-page">
-                    <Link to="mobility">
-                        <article>
-                            <div className="inner">
-                                <figure className="media">
-                                    <img src={img1} />
-                                </figure>
-                                <section className="content">
-                                    <p className="author">Mobility</p>
-                                    <p className="desc">Stay away from those people who try to disparage your ambitions. Small minds will always do that, but great minds will give you a feeling that you can become great too.</p>
-                                </section>
-                            </div>
-                        </article>
-                    </Link>
 
-                    <article>
-                        <div className="inner">
-                            <figure className="media">
-                                <img src={img1} />
-                            </figure>
-                            <section className="content">
-                                <p className="author">Functional Training</p>
-                                <p className="desc">Success is peace of mind, which is a direct result of self-satisfaction in knowing you made the effort to become the best of which you are capable.</p>
-                            </section>
-                        </div>
-                    </article>
+                    {workouts.map(workout =>
+                        <Link key={workout._id} to={workout._id}>
+                            <article>
+                                <div className="inner">
+                                    <figure className="media">
+                                        <img src={workout.img} />
+                                    </figure>
+                                    <section className="content">
+                                        <p className="author">{workout.name}</p>
+                                        <p className="desc">{workout.description}</p>
+                                    </section>
+                                </div>
+                            </article>
+                        </Link>
+                    )}
+
 
                 </div>
             </div>

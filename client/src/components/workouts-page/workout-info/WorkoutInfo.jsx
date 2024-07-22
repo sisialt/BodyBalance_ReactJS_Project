@@ -1,19 +1,30 @@
-import img2 from './mobility2.jpg'
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+
+const baseUrl = 'http://localhost:3030/jsonstore';
 
 export default function WorkoutInfo() {
+    const [workout, setWorkout] = useState({});
+    const { workoutId } = useParams();
+
+    useEffect(() => {
+        (async () => {
+            const response = await fetch(`${baseUrl}/workouts/${workoutId}`);
+            const data = await response.json();
+            const workoutData = data;
+            setWorkout(workoutData);
+        })();
+    }, []);
+
     return (
         <>
             <div style={{paddingTop: 200}}>
-                <h1>Mobility</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quasi provident itaque, nam odit autem officia totam culpa aut nihil deleniti iusto doloribus qui dicta blanditiis modi possimus repellat. Dicta?</p>
-                <div className="gallery">
-                    <img src={img2}/>
-                    <img src={img2}/>
-                    <img src={img2}/>
-                    <img src={img2}/>
-                    <img src={img2}/>
-                    <img src={img2}/>
-                </div>
+                <h1>{workout.name}</h1>
+                <p>{workout.info}</p>
+                <p>{workout.description}</p>
+                {/* TODO img path <div className="gallery">
+                    <img src={workout.img} />
+                </div> */}
             </div>
         </>
     );
