@@ -28,7 +28,7 @@ export default function Footer() {
                                     </a>
                                 </li>
                                 <li className="list-inline-item m-0">
-                                    <a className="text-light" target="_blank" href="https://www.medium.com/">
+                                    <a className="text-light" target="_blank" href="https://www.instagram.com/">
                                         <i className='bx bxl-instagram bx-md' ></i>
                                     </a>
                                 </li>
