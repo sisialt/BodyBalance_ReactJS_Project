@@ -1,16 +1,12 @@
-.footer-flex-cont {
+.flex {
     justify-content: space-around;
 }
 
-#footer-logo-img {
+.logo {
     border-radius: 2rem;
     margin-bottom: 2rem;
 }
 
-.bx-md {
+.icons {
     font-size: 3.6rem !important;
 }
-
-/* .footer-paragraph {
-    font-size: 1.5rem;
-} */

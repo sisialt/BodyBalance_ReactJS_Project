@@ -1,5 +1,4 @@
-import logo from './logo-plus-text.png';
-import './Footer.css';
+import styles from './Footer.module.css';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
@@ -7,29 +6,27 @@ export default function Footer() {
         <>
             <footer className="bg-secondary pt-4">
                 <div className="container">
-                    <div className="row py-4 footer-flex-cont">
+                    <div className={`${styles.flex} row py-4`}>
 
                         <div className="col-lg-3 col-12 align-left">
                             <a className="navbar-brand" href="#">
-                                <img id='footer-logo-img' src={logo} alt="" width={200} height={100} />
+                                <img className={styles.logo} src='images/logo-plus-text.png' alt="" width={200} height={100} />
                             </a>
-
-                            {/* <p className="footer-paragraph text-light my-lg-4 my-2">Functional Workouts</p> */}
 
                             <ul className="list-inline footer-icons light-300">
                                 <li className="list-inline-item m-0">
                                     <a className="text-light" target="_blank" href="http://facebook.com/">
-                                        <i className='bx bxl-facebook bx-md'></i>
+                                        <i className={`bx bxl-facebook bx-md ${styles.icons}`}></i>
                                     </a>
                                 </li>
                                 <li className="list-inline-item m-0">
                                     <a className="text-light" target="_blank" href="https://www.whatsapp.com/">
-                                        <i className='bx bxl-whatsapp bx-md'></i>
+                                        <i className={`bx bxl-whatsapp bx-md ${styles.icons}`}></i>
                                     </a>
                                 </li>
                                 <li className="list-inline-item m-0">
                                     <a className="text-light" target="_blank" href="https://www.instagram.com/">
-                                        <i className='bx bxl-instagram bx-md' ></i>
+                                        <i className={`bx bxl-instagram bx-md ${styles.icons}`}></i>
                                     </a>
                                 </li>
                             </ul>
