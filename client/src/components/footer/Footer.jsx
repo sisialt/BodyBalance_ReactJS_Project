@@ -1,5 +1,6 @@
-import styles from './Footer.module.css';
 import { Link } from 'react-router-dom';
+
+import styles from './Footer.module.css';
 
 export default function Footer() {
     return (
@@ -16,17 +17,17 @@ export default function Footer() {
                             <ul className="list-inline footer-icons light-300">
                                 <li className="list-inline-item m-0">
                                     <a className="text-light" target="_blank" href="http://facebook.com/">
-                                        <i className={`bx bxl-facebook bx-md ${styles.icons}`}></i>
+                                        <i className={`bx bxl-facebook ${styles.icons}`}></i>
                                     </a>
                                 </li>
                                 <li className="list-inline-item m-0">
                                     <a className="text-light" target="_blank" href="https://www.whatsapp.com/">
-                                        <i className={`bx bxl-whatsapp bx-md ${styles.icons}`}></i>
+                                        <i className={`bx bxl-whatsapp ${styles.icons}`}></i>
                                     </a>
                                 </li>
                                 <li className="list-inline-item m-0">
                                     <a className="text-light" target="_blank" href="https://www.instagram.com/">
-                                        <i className={`bx bxl-instagram bx-md ${styles.icons}`}></i>
+                                        <i className={`bx bxl-instagram ${styles.icons}`}></i>
                                     </a>
                                 </li>
                             </ul>

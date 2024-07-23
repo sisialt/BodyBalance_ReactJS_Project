@@ -1,7 +1,7 @@
-.nav-cont {
+.navCont {
     position: fixed;
     left: 50%;
-    top: 6%;
+    top: 12%;
     transform: translate(-50%, -50%);
     z-index: 1000;
     background-color: white;
@@ -9,6 +9,6 @@
     font-size: 1.3rem;
 }
 
-.nav-cont i {
+.navCont i {
     font-size: 1.8rem !important;
 }
