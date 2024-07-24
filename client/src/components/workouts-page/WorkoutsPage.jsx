@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Link, Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import './WorkoutsPage.css';
-import WorkoutInfo from './workout-info/WorkoutInfo';
 
 export default function WorkoutsPage() {
     const baseUrl = 'http://localhost:3030/jsonstore';
@@ -39,7 +38,6 @@ export default function WorkoutsPage() {
                             </article>
                         </Link>
                     )}
-
 
                 </div>
             </div>
