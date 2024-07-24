@@ -16,13 +16,13 @@ export default function Schedule() {
                                         <th>Monday</th>
                                         <td className="text-center">
                                             <Link to="/workouts/functional-training">
-                                                <img className="img rounded-circle mb-2" src="images/functional-training2.jpg" alt="" />
+                                                <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />8:00</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
                                             <Link to="/workouts/functional-training">
-                                                <img className="img rounded-circle mb-2" src="images/functional-training2.jpg" alt="" />
+                                                <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />9:00</p>
                                             </Link>
                                         </td>
@@ -32,13 +32,13 @@ export default function Schedule() {
                                         </td>
                                         <td className="text-center">
                                             <Link to="/workouts/functional-training">
-                                                <img className="img rounded-circle mb-2" src="images/functional-training2.jpg" alt="" />
+                                                <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />17:30</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
                                             <Link to="/workouts/functional-training">
-                                                <img className="img rounded-circle mb-2" src="images/functional-training2.jpg" alt="" />
+                                                <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />18:30</p>
                                             </Link>
                                         </td>
@@ -48,37 +48,37 @@ export default function Schedule() {
                                         <th>Tuesday</th>
                                         <td className="text-center">
                                             <Link to="/workouts/functional-training">
-                                                <img className="img rounded-circle mb-2" src="images/functional-training2.jpg" alt="" />
+                                                <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />8:00</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
                                             <Link to="/workouts/functional-training">
-                                                <img className="img rounded-circle mb-2" src="images/functional-training2.jpg" alt="" />
+                                                <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />9:00</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
                                             <Link to="/workouts/moms-with-babys">
-                                                <img className="img rounded-circle mb-2" src="images/moms-babys.jpg" alt="" />
+                                                <img className="img rounded-circle mb-2" src="images/babys.jpg" alt="" />
                                                 <p><strong>Moms with Babys</strong> <br />10:00</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
                                             <Link to="/workouts/teenagers">
-                                                <img className="img rounded-circle mb-2" src="images/teenagers.jpg" alt="" />
+                                                <img className="img rounded-circle mb-2" src="images/teen.jpg" alt="" />
                                                 <p><strong>Teenagers</strong> <br />16:00</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
                                             <Link to="/workouts/functional-training">
-                                                <img className="img rounded-circle mb-2" src="images/functional-training2.jpg" alt="" />
+                                                <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />17:30</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
                                             <Link to="/workouts/functional-training">
-                                                <img className="img rounded-circle mb-2" src="images/functional-training2.jpg" alt="" />
+                                                <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />18:30</p>
                                             </Link>
                                         </td>
@@ -88,13 +88,13 @@ export default function Schedule() {
                                         <th>Wednesday</th>
                                         <td className="text-center">
                                             <Link to="/workouts/functional-training">
-                                                <img className="img rounded-circle mb-2" src="images/functional-training2.jpg" alt="" />
+                                                <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />8:00</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
                                             <Link to="/workouts/functional-training">
-                                                <img className="img rounded-circle mb-2" src="images/functional-training2.jpg" alt="" />
+                                                <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />9:00</p>
                                             </Link>
                                         </td>
@@ -104,13 +104,13 @@ export default function Schedule() {
                                         </td>
                                         <td className="text-center">
                                             <Link to="/workouts/functional-training">
-                                                <img className="img rounded-circle mb-2" src="images/functional-training2.jpg" alt="" />
+                                                <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />17:30</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
                                             <Link to="/workouts/functional-training">
-                                                <img className="img rounded-circle mb-2" src="images/functional-training2.jpg" alt="" />
+                                                <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />18:30</p>
                                             </Link>
                                         </td>
@@ -120,37 +120,37 @@ export default function Schedule() {
                                         <th>Thirsday</th>
                                         <td className="text-center">
                                             <Link to="/workouts/functional-training">
-                                                <img className="img rounded-circle mb-2" src="images/functional-training2.jpg" alt="" />
+                                                <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />8:00</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
                                             <Link to="/workouts/functional-training">
-                                                <img className="img rounded-circle mb-2" src="images/functional-training2.jpg" alt="" />
+                                                <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />9:00</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
                                             <Link to="/workouts/moms-with-babys">
-                                                <img className="img rounded-circle mb-2" src="images/moms-babys.jpg" alt="" />
+                                                <img className="img rounded-circle mb-2" src="images/babys.jpg" alt="" />
                                                 <p><strong>Moms with Babys</strong> <br />10:00</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
                                             <Link to="/workouts/teenagers">
-                                                <img className="img rounded-circle mb-2" src="images/teenagers.jpg" alt="" />
+                                                <img className="img rounded-circle mb-2" src="images/teen.jpg" alt="" />
                                                 <p><strong>Teenagers</strong> <br />16:00</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
                                             <Link to="/workouts/functional-training">
-                                                <img className="img rounded-circle mb-2" src="images/functional-training2.jpg" alt="" />
+                                                <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />17:30</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
                                             <Link to="/workouts/functional-training">
-                                                <img className="img rounded-circle mb-2" src="images/functional-training2.jpg" alt="" />
+                                                <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />18:30</p>
                                             </Link>
                                         </td>
@@ -160,13 +160,13 @@ export default function Schedule() {
                                         <th>Friday</th>
                                         <td className="text-center">
                                             <Link to="/workouts/functional-training">
-                                                <img className="img rounded-circle mb-2" src="images/functional-training2.jpg" alt="" />
+                                                <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />8:00</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
                                             <Link to="/workouts/functional-training">
-                                                <img className="img rounded-circle mb-2" src="images/functional-training2.jpg" alt="" />
+                                                <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />9:00</p>
                                             </Link>
                                         </td>
@@ -176,13 +176,13 @@ export default function Schedule() {
                                         </td>
                                         <td className="text-center">
                                             <Link to="/workouts/functional-training">
-                                                <img className="img rounded-circle mb-2" src="images/functional-training2.jpg" alt="" />
+                                                <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />17:30</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
                                             <Link to="/workouts/functional-training">
-                                                <img className="img rounded-circle mb-2" src="images/functional-training2.jpg" alt="" />
+                                                <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />18:30</p>
                                             </Link>
                                         </td>
@@ -196,7 +196,7 @@ export default function Schedule() {
                                         </td>
                                         <td className="text-center">
                                             <Link to="/workouts/tabata">
-                                                <img className="img rounded-circle mb-2" src="images/tabata.png" alt="" />
+                                                <img className="img rounded-circle mb-2" src="images/tabata-new.jpg" alt="" />
                                                 <p><strong>Tabata</strong> <br />10:00</p>
                                             </Link>
                                         </td>
@@ -224,7 +224,7 @@ export default function Schedule() {
                                         </td>
                                         <td className="text-center">
                                             <Link to="/workouts/batuka">
-                                                <img className="img rounded-circle mb-2" src="images/batuka.png" alt="" />
+                                                <img className="img rounded-circle mb-2" src="images/batuka-new.jpg" alt="" />
                                                 <p><strong>Batuka</strong> <br />17:30</p>
                                             </Link>
                                         </td>
