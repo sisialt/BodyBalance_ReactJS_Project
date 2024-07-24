@@ -1,4 +1,13 @@
-.notFound {
+.not-found {
     margin: 10rem;
     margin-bottom: 5rem;
+}
+
+.sad {
+    font-size: 5rem !important;
+    line-height: 0;
+}
+
+.text {
+    text-align: center;
 }
