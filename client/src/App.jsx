@@ -10,6 +10,7 @@ import PricesPage from './components/prices-page/PricesPage'
 import ContactUsPage from './components/contact-us-page/ContactUsPage'
 import WorkoutInfo from './components/workouts-page/workout-info/WorkoutInfo'
 import NotFoundPage from './components/not-found-page/NotFoundPage'
+import TrainerInfo from './components/our-team-page/trainer-info/TrainerInfo'
 
 function App() {
 
@@ -21,10 +22,12 @@ function App() {
 				<Route path='/' element={<Home />} />
 				<Route path='/workouts/*' element={<WorkoutsPage />} />
 				<Route path='/workouts/:workoutId' element={<WorkoutInfo />} />
-				<Route path='/our-team' element={<OurTeamPage />} />
+				<Route path='/our-team/*' element={<OurTeamPage />} />
+				<Route path='/our-team/:trainerId' element={<TrainerInfo />} />
 				<Route path='/prices' element={<PricesPage />} />
 				<Route path='/contact-us' element={<ContactUsPage />} />
 				<Route path='/*' element={<NotFoundPage />} />
+				<Route path='/not-found' element={<NotFoundPage />} />
 			</Routes>
 
 			<Footer />
