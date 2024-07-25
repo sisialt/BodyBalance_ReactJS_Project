@@ -9,7 +9,7 @@ export default function Header() {
                 <nav id="main_nav" className="navbar navbar-expand-lg navbar-light bg-white shadow">
                     <div className="container d-flex justify-content-between align-items-center">
                         <Link to="/" className="navbar-brand h1">
-                            <img src="images/logo-image.png" alt="" width={80} height={80} />
+                            <img src="/images/logo-image.png" alt="" width={80} height={80} />
                         </Link>
 
                         <div className="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbar-toggler-success">

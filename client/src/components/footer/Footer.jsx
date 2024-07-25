@@ -11,7 +11,7 @@ export default function Footer() {
 
                         <div className="col-lg-3 col-12 align-left">
                             <a className="navbar-brand" href="#">
-                                <img className={styles.logo} src='images/logo-plus-text.png' alt="" width={200} height={100} />
+                                <img className={styles.logo} src='/images/logo-plus-text.png' alt="" width={200} height={100} />
                             </a>
 
                             <ul className="list-inline footer-icons light-300">
