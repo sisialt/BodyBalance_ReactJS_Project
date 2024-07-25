@@ -5,8 +5,9 @@
 
 figure.media img {
     display: block;
-    width: 100%;
-    height: auto;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
 }
 
 .container.workouts-page {
@@ -34,7 +35,7 @@ article .inner {
 
 article .media {
     overflow: hidden;
-    flex: 0 0 25%;
+    flex: 0 0 35%;
     aspect-ratio: 1/1;
     position: relative;
     border-radius: 50%;
