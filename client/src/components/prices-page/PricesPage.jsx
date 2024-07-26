@@ -1,8 +1,37 @@
+import styles from './PricesPage.module.css';
+
 export default function PricesPage() {
     return (
         <>
-            <div style={{ paddingTop: 200 }}>
-                <h1>Prices Page</h1>
+            <div>
+                <h1 className={styles.heading}>Prices</h1>
+                <div className={`container ${styles['container-two-plans']}`}>
+
+                    <div className={styles['plan']}>
+                        <p><strong>One training</strong></p>
+                        <p className={styles['price']}>BGN 8</p>
+                        <div className={styles['buttons']}>
+                            <a href="#" className={styles['button']}>Learn More</a>
+                        </div>
+                    </div>
+
+                    <div className={styles['plan']}>
+                        <p><strong>One month</strong></p>
+                        <p className={styles['price']}>BGN 50</p>
+                        <div className={styles['buttons']}>
+                            <a href="#" className={styles['button']}>Learn More</a>
+                        </div>
+                    </div>
+
+                    <div className={styles['plan']}>
+                        <p><strong>One year</strong></p>
+                        <p className={styles['price']}>BGN 400</p>
+                        <div className={styles['buttons']}>
+                            <a href="#" className={styles['button']}>Learn More</a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </>
     );
