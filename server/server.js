@@ -1469,10 +1469,24 @@
     	comments: {
     		"0a272c58-b7ea-4e09-a000-7ec988248f66": {
     			_ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
-    			content: "Great workout!",
+    			text: "Great workout!",
     			workoutId: "2d5ae478-87c7-45fa-acf9-f04aa4724421",
     			_createdOn: 1614260681375,
     			_id: "0a272c58-b7ea-4e09-a000-7ec988248f66"
+    		},
+            "dd272c58-b7ea-4e09-a000-7ec988248f66": {
+    			_ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+    			text: "Comment2",
+    			workoutId: "2d5ae478-87c7-45fa-acf9-f04aa4724421",
+    			_createdOn: 1614260671375,
+    			_id: "dd272c58-b7ea-4e09-a000-7ec988248f66"
+    		},
+            "vf272c58-b7ea-4e09-a000-7ec988248f66": {
+    			_ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+    			text: "3!",
+    			workoutId: "2d5ae478-87c7-45fa-acf9-f04aa4724421",
+    			_createdOn: 1614260681375,
+    			_id: "vf272c58-b7ea-4e09-a000-7ec988248f66"
     		}
     	},
     	likes: {
