@@ -21,9 +21,14 @@ export function useGetOneWorkouts(workoutId) {
 
     useEffect(() => {
         (async () => {
-            const result = await workoutsAPI.getOne(workoutId);
-            
-            setWorkout(result);
+            try {
+                const result = await workoutsAPI.getOne(workoutId);
+
+                setWorkout(result);
+            } catch (error) {
+                navigate('/not-found');
+                return;
+            }
         })();
     }, [workoutId]);
 
