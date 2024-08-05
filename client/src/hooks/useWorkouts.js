@@ -35,3 +35,17 @@ export function useCreateWorkout() {
 
     return workoutCreateHandler;
 }
+
+export function useGetMostFavouriteThreeWorkouts() {
+    const [workouts, setWorkouts] = useState([]);
+
+    useEffect(() => {
+        (async () => {
+            const result = await workoutsAPI.getMostFavourite();
+
+            setWorkouts(result);
+        })();
+    }, []);
+
+    return [workouts, setWorkouts];
+}

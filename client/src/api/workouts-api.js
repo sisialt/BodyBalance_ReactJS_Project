@@ -18,10 +18,25 @@ export const getOne = async (workoutId) => {
 
 export const create = (workoutData) => request.post(`${BASE_URL}`, workoutData);
 
+export const getMostFavourite = async () => {
+    const params = new URLSearchParams({
+        sortBy: `likes desc`,
+        pageSize: 3,
+    })
+
+
+    const result = await request.get(`${BASE_URL}?sortBy=likes%20desc&pageSize=3`);
+
+    const mostFavouriteWorkouts = Object.values(result);
+
+    return mostFavouriteWorkouts;
+}
+
 const workoutsAPI = {
     getAll,
     getOne,
     create,
+    getMostFavourite,
 };
 
 export default workoutsAPI;
