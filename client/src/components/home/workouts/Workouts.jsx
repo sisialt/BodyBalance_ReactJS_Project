@@ -1,25 +1,15 @@
-import { useState,useEffect } from 'react';
+import { useState } from 'react';
+
 import './Workouts.css'
-import baby from './baby-power2.jpg';
+
+import { useGetAllWorkouts, useGetMostFavouriteThreeWorkouts } from '../../../hooks/useWorkouts.js';
 import WorkoutDetails from './workout/workout-details/WorkoutDetails.jsx';
 import Workout from './workout/Workout.jsx';
 
-const baseUrl = 'http://localhost:3030/jsonstore';
-
 export default function Workouts() {
-    const [workouts, setWorkouts] = useState([]);
+    const [workouts] = useGetMostFavouriteThreeWorkouts();
     const [showWorkout, setShowWorkout] = useState(false);
     const [selectedWorkout, setSelectedWorkout] = useState(null);
-
-    useEffect(() => {
-        async function getWorkouts() {
-            const response = await fetch(`${baseUrl}/workouts`);
-            const data = await response.json();
-            const workoutData = Object.values(data);
-            setWorkouts(workoutData);
-        }
-        getWorkouts();
-    }, []);
 
     const showWorkoutClick = () => {
         setShowWorkout(true);
