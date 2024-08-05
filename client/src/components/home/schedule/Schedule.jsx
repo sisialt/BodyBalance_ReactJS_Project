@@ -15,13 +15,13 @@ export default function Schedule() {
                                         {/* <td><i className="fa fa-close"></i></td> */}
                                         <th>Monday</th>
                                         <td className="text-center">
-                                            <Link to="/workouts/functional-training">
+                                            <Link to="/workouts/6012c542-38e1-4660-ba40-1b109c40cb2f">
                                                 <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />8:00</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
-                                            <Link to="/workouts/functional-training">
+                                            <Link to="/workouts/6012c542-38e1-4660-ba40-1b109c40cb2f">
                                                 <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />9:00</p>
                                             </Link>
@@ -31,13 +31,13 @@ export default function Schedule() {
                                         <td className="text-center">
                                         </td>
                                         <td className="text-center">
-                                            <Link to="/workouts/functional-training">
+                                            <Link to="/workouts/6012c542-38e1-4660-ba40-1b109c40cb2f">
                                                 <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />17:30</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
-                                            <Link to="/workouts/functional-training">
+                                            <Link to="/workouts/6012c542-38e1-4660-ba40-1b109c40cb2f">
                                                 <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />18:30</p>
                                             </Link>
@@ -47,37 +47,37 @@ export default function Schedule() {
                                     <tr>
                                         <th>Tuesday</th>
                                         <td className="text-center">
-                                            <Link to="/workouts/functional-training">
+                                            <Link to="/workouts/6012c542-38e1-4660-ba40-1b109c40cb2f">
                                                 <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />8:00</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
-                                            <Link to="/workouts/functional-training">
+                                            <Link to="/workouts/6012c542-38e1-4660-ba40-1b109c40cb2f">
                                                 <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />9:00</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
-                                            <Link to="/workouts/moms-with-babys">
+                                            <Link to="/workouts/d749a819-1e41-4c65-9ce2-7b429c4ebd0d">
                                                 <img className="img rounded-circle mb-2" src="images/babys.jpg" alt="" />
                                                 <p><strong>Moms with Babys</strong> <br />10:00</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
-                                            <Link to="/workouts/teenagers">
+                                            <Link to="/workouts/r249a819-1e41-4c65-9ce2-7b429c4ebd0d">
                                                 <img className="img rounded-circle mb-2" src="images/teen.jpg" alt="" />
                                                 <p><strong>Teenagers</strong> <br />16:00</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
-                                            <Link to="/workouts/functional-training">
+                                            <Link to="/workouts/6012c542-38e1-4660-ba40-1b109c40cb2f">
                                                 <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />17:30</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
-                                            <Link to="/workouts/functional-training">
+                                            <Link to="/workouts/6012c542-38e1-4660-ba40-1b109c40cb2f">
                                                 <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />18:30</p>
                                             </Link>
@@ -87,13 +87,13 @@ export default function Schedule() {
                                     <tr>
                                         <th>Wednesday</th>
                                         <td className="text-center">
-                                            <Link to="/workouts/functional-training">
+                                            <Link to="/workouts/6012c542-38e1-4660-ba40-1b109c40cb2f">
                                                 <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />8:00</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
-                                            <Link to="/workouts/functional-training">
+                                            <Link to="/workouts/6012c542-38e1-4660-ba40-1b109c40cb2f">
                                                 <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />9:00</p>
                                             </Link>
@@ -103,13 +103,13 @@ export default function Schedule() {
                                         <td className="text-center">
                                         </td>
                                         <td className="text-center">
-                                            <Link to="/workouts/functional-training">
+                                            <Link to="/workouts/6012c542-38e1-4660-ba40-1b109c40cb2f">
                                                 <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />17:30</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
-                                            <Link to="/workouts/functional-training">
+                                            <Link to="/workouts/6012c542-38e1-4660-ba40-1b109c40cb2f">
                                                 <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />18:30</p>
                                             </Link>
@@ -119,37 +119,37 @@ export default function Schedule() {
                                     <tr>
                                         <th>Thirsday</th>
                                         <td className="text-center">
-                                            <Link to="/workouts/functional-training">
+                                            <Link to="/workouts/6012c542-38e1-4660-ba40-1b109c40cb2f">
                                                 <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />8:00</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
-                                            <Link to="/workouts/functional-training">
+                                            <Link to="/workouts/6012c542-38e1-4660-ba40-1b109c40cb2f">
                                                 <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />9:00</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
-                                            <Link to="/workouts/moms-with-babys">
+                                            <Link to="/workouts/d749a819-1e41-4c65-9ce2-7b429c4ebd0d">
                                                 <img className="img rounded-circle mb-2" src="images/babys.jpg" alt="" />
                                                 <p><strong>Moms with Babys</strong> <br />10:00</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
-                                            <Link to="/workouts/teenagers">
+                                            <Link to="/workouts/r249a819-1e41-4c65-9ce2-7b429c4ebd0d">
                                                 <img className="img rounded-circle mb-2" src="images/teen.jpg" alt="" />
                                                 <p><strong>Teenagers</strong> <br />16:00</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
-                                            <Link to="/workouts/functional-training">
+                                            <Link to="/workouts/6012c542-38e1-4660-ba40-1b109c40cb2f">
                                                 <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />17:30</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
-                                            <Link to="/workouts/functional-training">
+                                            <Link to="/workouts/6012c542-38e1-4660-ba40-1b109c40cb2f">
                                                 <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />18:30</p>
                                             </Link>
@@ -159,13 +159,13 @@ export default function Schedule() {
                                     <tr>
                                         <th>Friday</th>
                                         <td className="text-center">
-                                            <Link to="/workouts/functional-training">
+                                            <Link to="/workouts/6012c542-38e1-4660-ba40-1b109c40cb2f">
                                                 <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />8:00</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
-                                            <Link to="/workouts/functional-training">
+                                            <Link to="/workouts/6012c542-38e1-4660-ba40-1b109c40cb2f">
                                                 <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />9:00</p>
                                             </Link>
@@ -175,13 +175,13 @@ export default function Schedule() {
                                         <td className="text-center">
                                         </td>
                                         <td className="text-center">
-                                            <Link to="/workouts/functional-training">
+                                            <Link to="/workouts/6012c542-38e1-4660-ba40-1b109c40cb2f">
                                                 <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />17:30</p>
                                             </Link>
                                         </td>
                                         <td className="text-center">
-                                            <Link to="/workouts/functional-training">
+                                            <Link to="/workouts/6012c542-38e1-4660-ba40-1b109c40cb2f">
                                                 <img className="img rounded-circle mb-2" src="images/func-training.jpg" alt="" />
                                                 <p><strong>Functional training</strong> <br />18:30</p>
                                             </Link>
@@ -195,7 +195,7 @@ export default function Schedule() {
                                         <td className="text-center">
                                         </td>
                                         <td className="text-center">
-                                            <Link to="/workouts/tabata">
+                                            <Link to="/workouts/gg49a819-1e41-4c65-9ce2-7b429c4ebd0d">
                                                 <img className="img rounded-circle mb-2" src="images/tabata-new.jpg" alt="" />
                                                 <p><strong>Tabata</strong> <br />10:00</p>
                                             </Link>
@@ -223,7 +223,7 @@ export default function Schedule() {
                                             </Link>
                                         </td>
                                         <td className="text-center">
-                                            <Link to="/workouts/batuka">
+                                            <Link to="/workouts/p049a819-1e41-4c65-9ce2-7b429c4ebd0d">
                                                 <img className="img rounded-circle mb-2" src="images/batuka-new.jpg" alt="" />
                                                 <p><strong>Batuka</strong> <br />17:30</p>
                                             </Link>
