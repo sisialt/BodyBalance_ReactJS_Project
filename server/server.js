@@ -1417,6 +1417,7 @@
                 info: "Better flexibility",
                 description: "Stay flex",
                 img: "/images/mobility.jpg",
+                likes: 3,
                 _id: "2d5ae478-87c7-45fa-acf9-f04aa4724421",
                 _createdOn: 1613551279012
             },
@@ -1426,6 +1427,7 @@
                 info: "Individual",
                 description: "group training with individual character",
                 img: "/images/functional-training3.jpg",
+                likes: 2,
                 _id: "6012c542-38e1-4660-ba40-1b109c40cb2f",
                 _createdOn: 1713551279012
             },
@@ -1435,6 +1437,7 @@
                 info: "Recovery after birth",
                 description: "Welcome babys",
                 img: "/images/moms-with-babys2.jpg",
+                likes: 4,
                 _id: "d749a819-1e41-4c65-9ce2-7b429c4ebd0d",
                 _createdOn: 1813551279012
             },
@@ -1444,6 +1447,7 @@
                 info: "Children from 1st until 12th grade",
                 description: "Train teenagers",
                 img: "/images/teenagers.jpg",
+                likes: 1,
                 _id: "r249a819-1e41-4c65-9ce2-7b429c4ebd0d",
                 _createdOn: 1913551279012
             },
@@ -1453,6 +1457,7 @@
                 info: "Dance and train",
                 description: "Move around",
                 img: "/images/tabata2.png",
+                likes: 1,
                 _id: "gg49a819-1e41-4c65-9ce2-7b429c4ebd0d",
                 _createdOn: 1213551279011
             },
@@ -1462,6 +1467,7 @@
                 info: "More Dance",
                 description: "dance dance dance....",
                 img: "/images/batuka.png",
+                likes: 1,
                 _id: "p049a819-1e41-4c65-9ce2-7b429c4ebd0d",
                 _createdOn: 1213551279011
             },
@@ -1490,6 +1496,24 @@
     		}
     	},
     	likes: {
+            "jj272c58-b7ea-4e09-a000-7ec988248f66": {
+    			_ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+    			workoutId: "2d5ae478-87c7-45fa-acf9-f04aa4724421",
+    			_createdOn: 1614260681375,
+    			_id: "jj272c58-b7ea-4e09-a000-7ec988248f66"
+    		},
+            "ol272c58-b7ea-4e09-a000-7ec988248f66": {
+    			_ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+    			workoutId: "6012c542-38e1-4660-ba40-1b109c40cb2f",
+    			_createdOn: 1614260671375,
+    			_id: "ol272c58-b7ea-4e09-a000-7ec988248f66"
+    		},
+            "dr272c58-b7ea-4e09-a000-7ec988248f66": {
+    			_ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+    			workoutId: "d749a819-1e41-4c65-9ce2-7b429c4ebd0d",
+    			_createdOn: 1614260681375,
+    			_id: "dr272c58-b7ea-4e09-a000-7ec988248f66"
+    		}
     	}
     };
     var rules$1 = {
