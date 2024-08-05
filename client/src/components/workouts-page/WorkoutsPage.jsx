@@ -1,21 +1,11 @@
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import './WorkoutsPage.css';
 
-export default function WorkoutsPage() {
-    const baseUrl = 'http://localhost:3030/jsonstore';
-    const [workouts, setWorkouts] = useState([]);
+import { useGetAllWorkouts } from '../../hooks/useWorkouts';
 
-    useEffect(() => {
-        async function getWorkouts() {
-            const response = await fetch(`${baseUrl}/workouts`);
-            const data = await response.json();
-            const workoutData = Object.values(data);
-            setWorkouts(workoutData);
-        }
-        getWorkouts();
-    }, []);
+export default function WorkoutsPage() {
+    const [workouts] = useGetAllWorkouts();
 
     return (
         <>
