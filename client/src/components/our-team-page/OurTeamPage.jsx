@@ -1,21 +1,9 @@
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-import '../workouts-page/WorkoutsPage';
+import { useGetAllTrainers } from '../../hooks/useTrainers';
 
 export default function OurTeamPage() {
-    const baseUrl = 'http://localhost:3030/jsonstore';
-    const [trainers, setTrainers] = useState([]);
-
-    useEffect(() => {
-        async function getTrainers() {
-            const response = await fetch(`${baseUrl}/trainers`);
-            const data = await response.json();
-            const trainersData = Object.values(data);
-            setTrainers(trainersData);
-        }
-        getTrainers();
-    }, []);
+    const [trainers] = useGetAllTrainers();
 
     return (
         <>
