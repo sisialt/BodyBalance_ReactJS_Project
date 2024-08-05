@@ -1,4 +1,3 @@
-import Trainers from './trainers/Trainers'
 import Workouts from './workouts/Workouts'
 import Banner from './banner/Banner'
 import Schedule from './schedule/Schedule'
@@ -12,8 +11,6 @@ export default function Home() {
             <Workouts />
 
             <Schedule />
-
-            {/* <Trainers /> */}
 
             <Comments />
         </>
