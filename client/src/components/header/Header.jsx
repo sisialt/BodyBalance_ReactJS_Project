@@ -1,8 +1,12 @@
 import { Link } from 'react-router-dom';
 
 import styles from './Header.module.css';
+import { useContext } from 'react';
+import { AuthContext } from '../../contexts/AuthContext';
 
 export default function Header() {
+    const { isAuthenticated, email } = useContext(AuthContext);
+
     return (
         <>
             <div className={styles.navCont}>
@@ -33,7 +37,18 @@ export default function Header() {
                                 </ul>
                             </div>
                             <div className="navbar align-self-center d-flex">
-                                <Link to="/" className="nav-link"><i className='bx bx-user-circle bx-sm text-primary'></i></Link>
+
+                                {isAuthenticated
+                                    ? <Link to="/user-info" className="nav-link">
+                                        <i className='bx bx-user-circle bx-sm text-primary'></i>
+                                        <p>{email.substring(0, email.indexOf("@"))}</p>
+                                    </Link>
+                                    : <Link to="/login" className="nav-link">
+                                        <i className='bx bx-user-circle bx-sm text-primary'></i>
+                                        <p>Login/Register</p>
+                                    </Link>
+                                }
+
                             </div>
                         </div>
                     </div>
