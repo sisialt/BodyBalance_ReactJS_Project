@@ -1,6 +1,7 @@
-import { useRegister } from "../../hooks/useAuth";
 import { useNavigate, Link } from "react-router-dom";
 import { useState } from "react";
+
+import { useRegister } from "../../hooks/useAuth";
 import { useForm } from "../../hooks/useForm";
 
 const initialValues = { email: '', password: '', 'confirm-password': '' };
@@ -11,14 +12,12 @@ export default function Register() {
     const [error, setError] = useState('');
 
     const registerHandler = async (values) => {
-        const domains = ['.net', '.com', '.bg'];
+        if (!values.email || !values.password || !values['confirm-password']) {
+            return setError('All fields must be filled!');
+        };
 
         if (values.password != values['confirm-password']) {
             return setError('Password missmatch!');
-        };
-
-        if (!values.email || !values.password || !values['confirm-password']) {
-            return setError('All fields must be filled!');
         };
 
         if (!values.email.includes('@')) {
