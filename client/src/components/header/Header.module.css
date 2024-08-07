@@ -7,3 +7,14 @@
 .navCont i {
     font-size: 1.8rem !important;
 }
+
+.navCont a {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.navCont a p {
+    padding: 0;
+}

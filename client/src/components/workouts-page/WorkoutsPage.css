@@ -1,6 +1,6 @@
 .workouts-heading {
     text-align: center;
-    padding-top: 4em;
+    padding-top: 2em;
 }
 
 figure.media img {
@@ -12,14 +12,15 @@ figure.media img {
 
 .container.workouts-page {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
     gap: 2em;
-    width: 50%;
     margin: 4em auto;
 }
 
 .container.workouts-page a {
     text-decoration: none;
+    max-width: 50%;
 }
 
 article .inner {
@@ -31,6 +32,7 @@ article .inner {
     gap: 2em;
     border-radius: 2em;
     box-shadow: -0.2em 0.2em 0.5em 0 rgba(0,0,0,0.05);
+    max-width: 100%;
 }
 
 article .media {

@@ -7,12 +7,12 @@ export default function UserInfo() {
 
     return (
         <>
-            <div className="container user-info-page" style={{ paddingTop: 50 }}>
+            <div className="container" style={{ paddingTop: 50 }}>
                 <h1 style={{textAlign: "center"}}>User Info</h1>
 
                 <form style={{maxWidth: 500, marginBottom: 50}}>
 
-                    <div className="user-info-container" style={{display: "flex", flexDirection: "column", gap: 20, maxWidth: 500}}>
+                    <div style={{display: "flex", flexDirection: "column", gap: 20, maxWidth: 500}}>
                         <p>Email: {contextData.email}</p>
                         <p>Password: ******</p>
 
