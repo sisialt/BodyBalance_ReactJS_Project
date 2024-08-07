@@ -31,9 +31,9 @@ export default function Header() {
                                     <li className="nav-item">
                                         <Link to="/prices" className="nav-link btn-outline-primary rounded-pill px-3">Prices</Link>
                                     </li>
-                                    <li className="nav-item">
+                                    {/* <li className="nav-item">
                                         <Link to="/contact-us" className="nav-link btn-outline-primary rounded-pill px-3">Contact Us</Link>
-                                    </li>
+                                    </li> */}
                                 </ul>
                             </div>
                             <div className="navbar align-self-center d-flex">

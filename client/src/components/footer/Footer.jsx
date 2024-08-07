@@ -48,9 +48,9 @@ export default function Footer() {
                                 <li className="pb-2">
                                     <i className='bx-fw bx bxs-chevron-right bx-xs'></i><Link to="/prices" className="text-decoration-none text-light py-1">Prices</Link>
                                 </li>
-                                <li className="pb-2">
+                                {/* <li className="pb-2">
                                     <i className='bx-fw bx bxs-chevron-right bx-xs'></i><Link to="/contact-us" className="text-decoration-none text-light py-1">Contact Us</Link>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
 

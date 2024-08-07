@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 
 import './App.css'
@@ -39,7 +38,7 @@ function App() {
 				<Route path='/our-team/*' element={<OurTeamPage />} />
 				<Route path='/our-team/:trainerId' element={<TrainerInfo />} />
 				<Route path='/prices' element={<PricesPage />} />
-				<Route path='/contact-us' element={<ContactUsPage />} />
+				{/* <Route path='/contact-us' element={<ContactUsPage />} /> */}
 				<Route path='/*' element={<NotFoundPage />} />
 				<Route path='/not-found' element={<NotFoundPage />} />
 				<Route path='/login' element={<Login />} />
