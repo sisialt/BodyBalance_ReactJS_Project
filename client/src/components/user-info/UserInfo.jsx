@@ -14,7 +14,7 @@ export default function UserInfo() {
 
                     <div style={{display: "flex", flexDirection: "column", gap: 20, maxWidth: 500}}>
                         <p>Email: {contextData.email}</p>
-                        <p>Password: ******</p>
+                        <p>Username: {contextData.username}</p>
 
                         <Link to="/logout"><input type="submit" className="submit" value="Logout" /></Link>
 
