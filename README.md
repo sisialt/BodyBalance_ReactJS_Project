@@ -43,7 +43,7 @@ Start the server
 ## Screenshots
 ![img1](https://github.com/user-attachments/assets/52d3aa67-bb63-4add-b0d2-b2f0f3e8094a)
 
-![img2](https://github.com/user-attachments/assets/4f47789a-44c1-485f-b54a-cad579cfeaf7)
+![img2](https://github.com/user-attachments/assets/8cff7f80-a6b2-487b-8cdc-3d711db145c9)
 
 ![img3](https://github.com/user-attachments/assets/ebed2045-18ef-4ed9-8928-5a798ab41153)
 
