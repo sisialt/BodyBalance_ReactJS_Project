@@ -35,7 +35,6 @@ export default function WorkoutInfo() {
         try {
             const newComment = await createComment(workoutId, text);
             setComments(oldComments => [...oldComments, newComment]);
-            window.location.reload()
         } catch (err) {
             console.error(err.message);
             setError(err.message);
@@ -44,8 +43,8 @@ export default function WorkoutInfo() {
 
     const deleteCommentHandler = (commentId) => {
         try {
-            deleteComment(commentId)
-            window.location.reload()
+            deleteComment(commentId);
+            setComments(oldComments => [...oldComments.filter(c => c._id !== commentId)]);
         } catch (err) {
             console.log(err.message)
         }
@@ -67,7 +66,7 @@ export default function WorkoutInfo() {
                         <div key={comment._id}>
                             <div>
                                 <p>
-                                    {comment.author.username}: {comment.text}
+                                    {comment.author?.username}: {comment.text}
 
                                     {comment._ownerId === userId &&
                                         <input
