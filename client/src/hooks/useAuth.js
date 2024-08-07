@@ -33,10 +33,13 @@ export const useRegister = () => {
 export const useLogout = () => {
     const { logout: localLogout } = useContext(AuthContext);
 
-    const logoutHandler = () => {
-        localLogout();
-        logout()
-        //await logout();
+    const logoutHandler = async () => {
+        try {
+            localLogout();
+            await logout();
+        } catch (err) {
+            localStorage.clear();
+        } 
     };
 
     return logoutHandler;
