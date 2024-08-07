@@ -1,4 +1,4 @@
-export const getAccessToken = () => {
+const getAccessToken = () => {
     const authJSON = localStorage.getItem('auth');
 
     if (!authJSON) {
@@ -11,7 +11,6 @@ export const getAccessToken = () => {
 }
 
 async function requester(method, url, data) {
-
     const options = {};
 
     const accessToken = getAccessToken();
@@ -29,6 +28,7 @@ async function requester(method, url, data) {
 
     if (data) {
         options.headers = {
+            ...options.headers,
             'Content-Type': 'application/json'
         };
 
@@ -36,9 +36,12 @@ async function requester(method, url, data) {
     }
 
     const response = await fetch(url, options);
+    if (response.status == 204) {
+        return;
+    }
 
     const result = await response.json();
-    
+
     if (!response.ok) {
         throw result;
     }
