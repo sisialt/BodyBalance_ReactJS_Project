@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 import workoutsAPI from "../api/workouts-api.js";
+import { Navigate, useNavigate } from "react-router-dom";
 
 export function useGetAllWorkouts() {
     const [workouts, setWorkouts] = useState([]);
@@ -17,7 +18,15 @@ export function useGetAllWorkouts() {
 }
 
 export function useGetOneWorkouts(workoutId) {
-    const [workout, setWorkout] = useState({});
+    const [workout, setWorkout] = useState({
+        name: "",
+        info: "",
+        description: "",
+        img: "",
+        likes: 0,
+    });
+    
+    const navigate = useNavigate();
 
     useEffect(() => {
         (async () => {
@@ -53,4 +62,17 @@ export function useGetMostFavouriteThreeWorkouts() {
     }, []);
 
     return [workouts, setWorkouts];
+}
+
+export function useDeleteWorkout() {
+    const workoutDeleteHandler = (workoutId) => {
+        try {
+            workoutsAPI.remove(workoutId);
+
+        } catch (err) {
+            console.log(err.message)
+        }
+    }
+
+    return workoutDeleteHandler;
 }
