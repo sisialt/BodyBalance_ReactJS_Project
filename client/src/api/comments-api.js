@@ -2,7 +2,7 @@ import requester from "./requester.js";
 
 const BASE_URL = 'http://localhost:3030/data/comments';
 
-const create = async (username, text) => await requester.post(BASE_URL, { username, text });
+const create = async (workoutId, text) => await requester.post(BASE_URL, { workoutId, text });
 
 const getAll = async () => {
     const result = await requester.get(BASE_URL);
@@ -12,20 +12,41 @@ const getAll = async () => {
     return comments;
 }
 
-const getAllForOneWorkout = (workoutId) => {
+const getAllForOneWorkout = async (workoutId) => {
     const params = new URLSearchParams({
-        where: `workoutId="${workoutId}"`
+        where: `workoutId="${workoutId}"`,
+        load: `author=_ownerId:users`,
     });
 
-    const result = requester.get(`${BASE_URL}?${params.toString()}`);
+    
+    const result = await requester.get(`${BASE_URL}?${params.toString()}`);
+
+    console.log(result)
+
 
     return result;
 }
+
+const getLatestThree = async () => {
+    const params = new URLSearchParams({
+        load: `author=_ownerId:users`,
+    });
+
+    const result = await requester.get(`${BASE_URL}?load=author%3D_ownerId%3Ausers%2Cworkout%3DworkoutId%3Aworkouts`);
+
+    const latestThreeComments = Object.values(result);
+    
+    return latestThreeComments;
+}
+
+export const remove = (commentId) => requester.del(`${BASE_URL}/${commentId}`);
 
 const commentsAPI = {
     create,
     getAll,
     getAllForOneWorkout,
+    getLatestThree,
+    remove,
 };
 
 export default commentsAPI;
