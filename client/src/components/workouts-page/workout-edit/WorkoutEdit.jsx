@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "../../../hooks/useForm";
 import workoutsAPI from "../../../api/workouts-api";
+import { useState } from "react";
 
 
 const initialValues = {
@@ -18,15 +19,24 @@ export default function WorkoutEdit() {
     const { workoutId } = useParams();
     const [workout] = useGetOneWorkouts(workoutId);
     const navigate = useNavigate();
+    const [error, setError] = useState('');
 
     const editHandler = (workout) => {
+        if (!values.name || !values.info || !values.description || !values.img) {
+            return setError('All fields must be filled!')
+        }
+
+        if (values.name.length < 2 || values.info.length < 2 || values.description.length < 2 || values.img.length < 2) {
+            return setError('All fields should be at least 3 characters long!')
+        }
+
         try {
             workoutsAPI.update(workoutId, workout);
             navigate(`/workouts/${workoutId}`);
         } catch (err) {
-            console.log(err);
+            return setError('error');
         }
-        
+
     }
 
     const { values, changeHandler, submitHandler } = useForm(workout, editHandler, true);
@@ -74,6 +84,12 @@ export default function WorkoutEdit() {
                             value={values.img}
                             onChange={changeHandler}
                         />
+
+                        {error && (
+                            <p>
+                                <span style={{ fontSize: '18px', color: 'red' }}>{error}</span>
+                            </p>
+                        )}
 
                         <input type="submit" className="submit" value="Edit Workout" />
                     </div>

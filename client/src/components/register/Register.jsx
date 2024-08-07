@@ -11,16 +11,30 @@ export default function Register() {
     const [error, setError] = useState('');
 
     const registerHandler = async (values) => {
+        const domains = ['.net', '.com', '.bg'];
+
         if (values.password != values['confirm-password']) {
             return setError('Password missmatch!');
         };
+
+        if (!values.email || !values.password || !values['confirm-password']) {
+            return setError('All fields must be filled!');
+        };
+
+        if (!values.email.includes('@')) {
+            return setError('Email should contain "@"!');
+        };
+
+        if (!values.email.includes('.net') && !values.email.includes('.com') && !values.email.includes('.bg')) {
+            return setError('Email should have domain (.net, .com, .bg)!');
+        }
 
         try {
             await register(values.email, values.password);
 
             navigate('/');
         } catch (err) {
-            setError(err.message);
+            return setError(err.message);
         }
     };
 
@@ -36,7 +50,7 @@ export default function Register() {
                     <div className="register-container" style={{ display: "flex", flexDirection: "column", gap: 20, maxWidth: 500 }}>
                         <label htmlFor="email">Email: </label>
                         <input
-                            type="email"
+                            type="text"
                             id="email"
                             name="email"
                             placeholder="your-email@gmail.com"
