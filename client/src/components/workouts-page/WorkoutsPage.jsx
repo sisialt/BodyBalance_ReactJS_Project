@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
 
 import './WorkoutsPage.css';
 
 import { useGetAllWorkouts } from '../../hooks/useWorkouts';
-import { useContext } from 'react';
 import { AuthContext } from '../../contexts/AuthContext';
 
 export default function WorkoutsPage() {

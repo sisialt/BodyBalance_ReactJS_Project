@@ -1,6 +1,7 @@
 import { useContext } from "react";
-import { AuthContext } from "../../contexts/AuthContext";
 import { Link } from "react-router-dom";
+
+import { AuthContext } from "../../contexts/AuthContext";
 
 export default function UserInfo() {
     const contextData = useContext(AuthContext);

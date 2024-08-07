@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import workoutsAPI from "../api/workouts-api.js";
-import { Navigate, useNavigate } from "react-router-dom";
 
 export function useGetAllWorkouts() {
     const [workouts, setWorkouts] = useState([]);

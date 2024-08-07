@@ -1,6 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { useGetOneWorkouts } from "../../../hooks/useWorkouts";
 import { Link } from "react-router-dom";
+
+import { useGetOneWorkouts } from "../../../hooks/useWorkouts";
 import workoutsAPI from "../../../api/workouts-api";
 
 export default function WorkoutDelete() {

@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
 import commentsAPI from "../api/comments-api";
-import { useNavigate } from "react-router-dom";
 
 export function useGetAllComments() {
     const [comments, setComments] = useState([]);
@@ -55,8 +54,6 @@ export function useDeleteComment() {
     const commentDeleteHandler = (commentId) => {
         try {
             commentsAPI.remove(commentId);
-            console.log('useComments')
-
         } catch (err) {
             console.log(err.message)
         }

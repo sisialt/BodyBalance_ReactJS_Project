@@ -1,11 +1,9 @@
-import { useParams } from "react-router-dom";
-import { useGetOneWorkouts } from "../../../hooks/useWorkouts";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-import { useForm } from "../../../hooks/useForm";
-import workoutsAPI from "../../../api/workouts-api";
+import { useParams, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
+import { useGetOneWorkouts } from "../../../hooks/useWorkouts";
+import { useForm } from "../../../hooks/useForm";
+import workoutsAPI from "../../../api/workouts-api";
 
 const initialValues = {
     name: "",

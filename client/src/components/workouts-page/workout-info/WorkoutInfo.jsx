@@ -1,12 +1,10 @@
-import { useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useState, useContext } from 'react';
+import { useNavigate, useParams, Link } from 'react-router-dom';
+
 import { useGetOneWorkouts } from '../../../hooks/useWorkouts';
-import { Link } from 'react-router-dom';
-import { useContext } from 'react';
 import { AuthContext } from '../../../contexts/AuthContext';
 import { useForm } from '../../../hooks/useForm';
 import { useCreateComment, useDeleteComment, useGetOneWorkoutComments } from '../../../hooks/useComments';
-import commentsAPI from '../../../api/comments-api';
 
 const initialValues = {
     text: "",
@@ -17,7 +15,6 @@ export default function WorkoutInfo() {
     const { workoutId } = useParams();
     const [workout] = useGetOneWorkouts(workoutId);
     const { userId, isAuthenticated } = useContext(AuthContext);
-    const navigate = useNavigate();
 
     const [comments, setComments] = useGetOneWorkoutComments(workoutId);
     const createComment = useCreateComment();

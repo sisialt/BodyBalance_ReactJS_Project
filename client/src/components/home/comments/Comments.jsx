@@ -1,15 +1,9 @@
 import './Comments.css/';
 
-import { useGetAllComments, useGetLatestThreeComments } from '../../../hooks/useComments';
-import { useContext } from 'react';
-import { AuthContext } from '../../../contexts/AuthContext';
-import { useForm } from '../../../hooks/useForm';
-
-
+import { useGetLatestThreeComments } from '../../../hooks/useComments';
 
 export default function Comments() {
     const [comments] = useGetLatestThreeComments();
-    
 
     return (
         <>

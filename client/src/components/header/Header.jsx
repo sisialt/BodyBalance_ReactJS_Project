@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-
-import styles from './Header.module.css';
 import { useContext } from 'react';
+
 import { AuthContext } from '../../contexts/AuthContext';
+import styles from './Header.module.css';
 
 export default function Header() {
     const { isAuthenticated, email } = useContext(AuthContext);

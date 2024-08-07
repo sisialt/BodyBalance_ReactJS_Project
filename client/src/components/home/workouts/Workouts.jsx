@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import './Workouts.css'
 
-import { useGetAllWorkouts, useGetMostFavouriteThreeWorkouts } from '../../../hooks/useWorkouts.js';
+import { useGetMostFavouriteThreeWorkouts } from '../../../hooks/useWorkouts.js';
 import WorkoutDetails from './workout/workout-details/WorkoutDetails.jsx';
 import Workout from './workout/Workout.jsx';
 

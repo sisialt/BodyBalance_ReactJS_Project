@@ -10,25 +10,16 @@ export default function PricesPage() {
                     <div className={styles['plan']}>
                         <p><strong>One training</strong></p>
                         <p className={styles['price']}>BGN 8</p>
-                        <div className={styles['buttons']}>
-                            <a href="#" className={styles['button']}>Learn More</a>
-                        </div>
                     </div>
 
                     <div className={styles['plan']}>
                         <p><strong>One month</strong></p>
                         <p className={styles['price']}>BGN 50</p>
-                        <div className={styles['buttons']}>
-                            <a href="#" className={styles['button']}>Learn More</a>
-                        </div>
                     </div>
 
                     <div className={styles['plan']}>
                         <p><strong>One year</strong></p>
                         <p className={styles['price']}>BGN 400</p>
-                        <div className={styles['buttons']}>
-                            <a href="#" className={styles['button']}>Learn More</a>
-                        </div>
                     </div>
 
                 </div>

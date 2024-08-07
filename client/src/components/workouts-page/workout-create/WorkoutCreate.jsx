@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { AuthContext } from "../../../contexts/AuthContext";
 import { useNavigate } from "react-router-dom";
+
 import { useForm } from "../../../hooks/useForm";
 import { useCreateWorkout } from "../../../hooks/useWorkouts";
 

@@ -17,12 +17,8 @@ const getAllForOneWorkout = async (workoutId) => {
         where: `workoutId="${workoutId}"`,
         load: `author=_ownerId:users`,
     });
-
     
     const result = await requester.get(`${BASE_URL}?${params.toString()}`);
-
-    console.log(result)
-
 
     return result;
 }
@@ -32,7 +28,7 @@ const getLatestThree = async () => {
         load: `author=_ownerId:users`,
     });
 
-    const result = await requester.get(`${BASE_URL}?load=author%3D_ownerId%3Ausers%2Cworkout%3DworkoutId%3Aworkouts`);
+    const result = await requester.get(`${BASE_URL}?load=author%3D_ownerId%3Ausers%2Cworkout%3DworkoutId%3Aworkouts&pageSize=3`);
 
     const latestThreeComments = Object.values(result);
     

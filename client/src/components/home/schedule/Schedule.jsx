@@ -1,5 +1,6 @@
-import './Schedule.css';
 import { Link } from 'react-router-dom';
+
+import './Schedule.css';
 
 export default function Schedule() {
     return (

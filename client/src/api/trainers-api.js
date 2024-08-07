@@ -1,9 +1,9 @@
-import * as request from './requester.js';
+import requester from './requester.js';
 
 const BASE_URL = 'http://localhost:3030/data/trainers';
 
 export const getAll = async () => {
-    const result = await request.get(BASE_URL);
+    const result = await requester.get(BASE_URL);
 
     const trainers = Object.values(result);
 
@@ -11,12 +11,12 @@ export const getAll = async () => {
 };
 
 export const getOne = async (trainerId) => {
-    const trainer = await request.get(`${BASE_URL}/${trainerId}`);
+    const trainer = await requester.get(`${BASE_URL}/${trainerId}`);
 
     return trainer;
 };
 
-export const create = (trainerData) => request.post(`${BASE_URL}`, trainerData);
+export const create = (trainerData) => requester.post(`${BASE_URL}`, trainerData);
 
 const trainersAPI = {
     getAll,
