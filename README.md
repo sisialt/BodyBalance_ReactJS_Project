@@ -10,6 +10,8 @@ Users can register, log in and comment the workouts. Only admins can edit/delete
 
 For the back-end I use the practice server from the university (https://github.com/softuni-practice-server/softuni-practice-server).
 
+I started the project using HTML Template with Bootstrap (https://www.free-css.com/free-css-templates/page283/purple-buzz).
+
 
 ## Run Locally
 
@@ -44,6 +46,8 @@ Start the server
 ![img1](https://github.com/user-attachments/assets/52d3aa67-bb63-4add-b0d2-b2f0f3e8094a)
 
 ![img2](https://github.com/user-attachments/assets/8cff7f80-a6b2-487b-8cdc-3d711db145c9)
+
+![img7](https://github.com/user-attachments/assets/f1087ae8-89fe-4901-bfcb-5612c04e8775)
 
 ![img3](https://github.com/user-attachments/assets/ebed2045-18ef-4ed9-8928-5a798ab41153)
 
