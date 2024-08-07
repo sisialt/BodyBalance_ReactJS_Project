@@ -1,19 +1,15 @@
-import { useState, useEffect } from 'react';
-import './Comments.css/'
+import './Comments.css/';
+
+import { useGetAllComments, useGetLatestThreeComments } from '../../../hooks/useComments';
+import { useContext } from 'react';
+import { AuthContext } from '../../../contexts/AuthContext';
+import { useForm } from '../../../hooks/useForm';
+
+
 
 export default function Comments() {
-
-    const baseUrl = 'http://localhost:3030/jsonstore';
-    const [comments, setComments] = useState([]);
-
-    useEffect(() => {
-        (async () => {
-            const response = await fetch(`${baseUrl}/comments`);
-            const data = await response.json();
-            const commentsData = Object.values(data);
-            setComments(commentsData);
-        })();
-    }, []);
+    const [comments] = useGetLatestThreeComments();
+    
 
     return (
         <>
@@ -24,19 +20,22 @@ export default function Comments() {
                     </div>
                     <div className="row gy-5 g-lg-5 mb-4">
 
-                        {comments.map(comment =>
-                            <div key={comment._id} className="col-md-4 mb-3">
-                                <div className="card shadow-lg overflow-hidden">
-                                    <div className="  d-flex align-items-center">
-                                        <div className="recent-work-content text-start mb-3 ml-3 text-dark no-decoration">
-                                            <h3 className="card-title light-300">{comment.username} for {comment.workout}</h3>
-                                            <p>{comment.createdAt}</p>
-                                            <p className="card-text">{comment.text}</p>
+                        {comments.length > 0
+                            ? comments.map(comment =>
+                                <div key={comment._id} className="col-md-4 mb-3">
+                                    <div className="card shadow-lg overflow-hidden">
+                                        <div className="  d-flex align-items-center">
+                                            <div className="recent-work-content text-start mb-3 ml-3 text-dark no-decoration">
+                                                <h3 className="card-title light-300">{comment.author.username} about {comment.workout.name}</h3>
+                                                <p className="card-text">{comment.text}</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        )}
+                                </div>)
+                            : <p>No comments yet</p>
+                        }
+
+                        
 
                     </div>
                 </div>
