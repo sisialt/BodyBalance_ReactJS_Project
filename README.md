@@ -41,3 +41,15 @@ Start the server
 
 
 ## Screenshots
+![img1](https://github.com/user-attachments/assets/52d3aa67-bb63-4add-b0d2-b2f0f3e8094a)
+
+![img2](https://github.com/user-attachments/assets/4f47789a-44c1-485f-b54a-cad579cfeaf7)
+
+![img3](https://github.com/user-attachments/assets/ebed2045-18ef-4ed9-8928-5a798ab41153)
+
+![img5](https://github.com/user-attachments/assets/636bbd43-a9ec-4de2-9349-da780dccf634)
+
+![img4](https://github.com/user-attachments/assets/9d70de23-9db7-4b42-bb84-94e71206a105)
+
+![img6](https://github.com/user-attachments/assets/aee43b31-0229-496b-9700-5c63b9511147)
+
