@@ -28,7 +28,7 @@ const getLatestThree = async () => {
         load: `author=_ownerId:users`,
     });
 
-    const result = await requester.get(`${BASE_URL}?load=author%3D_ownerId%3Ausers%2Cworkout%3DworkoutId%3Aworkouts&pageSize=3`);
+    const result = await requester.get(`${BASE_URL}?load=author%3D_ownerId%3Ausers%2Cworkout%3DworkoutId%3Aworkouts&pageSize=3&sortBy=_createdOn%20desc`);
 
     const latestThreeComments = Object.values(result);
     
