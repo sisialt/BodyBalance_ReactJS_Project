@@ -24,6 +24,7 @@ import WorkoutEdit from './components/workouts-page/workout-edit/WorkoutEdit'
 import AccessDenied from './components/access-denied/AccessDenied'
 import AuthenticatedView from './guards/AuthenticatedView'
 import WorkoutDelete from './components/workouts-page/workout-delete/WorkoutDelete'
+import AuthenticatedLoggedView from './guards/AuthenticatedLoggedView'
 
 function App() {
 
@@ -41,9 +42,9 @@ function App() {
 				{/* <Route path='/contact-us' element={<ContactUsPage />} /> */}
 				<Route path='/*' element={<NotFoundPage />} />
 				<Route path='/not-found' element={<NotFoundPage />} />
-				<Route path='/login' element={<Login />} />
-				<Route path='/logout' element={<Logout />} />
-				<Route path='/register' element={<Register />} />
+				<Route path='/login' element={<AuthenticatedLoggedView><Login /></AuthenticatedLoggedView>} />
+				<Route path='/logout' element={<AuthenticatedView><Logout /></AuthenticatedView>} />
+				<Route path='/register' element={<AuthenticatedLoggedView><Register /></AuthenticatedLoggedView>} />
 				<Route path='/access-denied' element={<AccessDenied />} />
 				<Route path='/user-info' element={<AuthenticatedView><UserInfo /></AuthenticatedView>} />
 				<Route path='/workouts/create' element={<AuthenticatedAdminView><WorkoutCreate /></AuthenticatedAdminView>} />
